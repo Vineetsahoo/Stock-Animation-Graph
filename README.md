@@ -1,8 +1,8 @@
-# Multi-Company Stock Price Animation Visualization 📈
+# Multi-Company Stock Price Animation Visualization 
 
 An animated line graph visualization comparing multiple tech company stock prices over time using Python and matplotlib. This project demonstrates how to load and process stock data for AMD, Intel, Nvidia, Apple, Microsoft, Tesla, and Qualcomm, create dynamic visualizations with moving price labels, and export the final result as both MP4 and GIF formats. Whether you're interested in data visualization, financial analysis, or learning matplotlib animations, this project provides a comprehensive example with scalable architecture for any number of companies.
 
-## 🚀 Features
+## Features
 
 - **Multi-Company Comparison**: Visualize 7 major tech companies simultaneously (AMD, Intel, Nvidia, Apple, Microsoft, Tesla, Qualcomm)
 - **Scalable Architecture**: Easily add or remove companies by modifying the companies dictionary
@@ -17,7 +17,7 @@ An animated line graph visualization comparing multiple tech company stock price
 - **Educational Content**: Perfect for learning data visualization and matplotlib animations
 - **Cross-Platform Compatible**: Works on Windows, macOS, and Linux
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this project, ensure you have Python installed with the following packages:
 
@@ -37,7 +37,7 @@ For MP4 export, you'll also need FFmpeg installed on your system.
 2. **FFmpeg** (optional): Download from [https://ffmpeg.org/](https://ffmpeg.org/)
 3. **Jupyter** (optional): For interactive notebook experience
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 line-animation/
@@ -55,13 +55,13 @@ line-animation/
 └── README.md                       # This file
 ```
 
-## 📊 Data Format
+## Data Format
 
 The CSV files should contain stock data with the following columns:
 - `Date`: Date of the stock price
 - `Close/Last`: Closing price (formatted as $XX.XX)
 
-## 🎯 How to Use
+## How to Use
 
 ### Option 1: Python Script (Quick Start)
 1. **Clone or download** this repository
@@ -88,7 +88,7 @@ The CSV files should contain stock data with the following columns:
 - **Quick deployment**: Use the Python script for immediate results
 - **Customization**: Use the notebook to experiment, then adapt the script
 
-## 🎨 Customization Options
+## Customization Options
 
 ### Companies
 The script currently supports 7 major tech companies:
@@ -131,7 +131,7 @@ colors = {
 - Marker size: 8px with white edges
 - Legend position: Upper left with shadow
 
-## 📈 Features Explained
+## Features Explained
 
 ### Data Processing
 - Loads and cleans CSV data from multiple company sources
@@ -161,11 +161,11 @@ colors = {
 - **Modular Design**: Simple to extend with additional companies
 - **Error Resilience**: Continues working even if some files are missing
 
-## 📓 Jupyter Notebook Tutorial
+## Jupyter Notebook Tutorial
 
 The included `stock_animation.ipynb` provides a comprehensive, interactive learning experience:
 
-### 🎓 What's Included:
+### What's Included:
 1. **Step-by-Step Guide**: Each concept explained in detail with markdown cells
 2. **Interactive Code**: Run and modify code cells to see immediate results
 3. **Visual Examples**: Live plots and animations within the notebook
@@ -173,7 +173,7 @@ The included `stock_animation.ipynb` provides a comprehensive, interactive learn
 5. **Customization Examples**: Easy ways to modify colors, timing, and styles
 6. **Export Instructions**: Detailed guidance for saving animations
 
-### 🚀 Notebook Sections:
+### Notebook Sections:
 - **Library Imports**: Understanding required packages
 - **Data Loading**: CSV processing and cleaning techniques
 - **Data Preparation**: Combining and sorting multiple datasets
@@ -182,13 +182,13 @@ The included `stock_animation.ipynb` provides a comprehensive, interactive learn
 - **Animation Logic**: Frame-by-frame update mechanisms
 - **Display & Export**: Running and saving animations
 
-### 💡 Perfect For:
+### Perfect For:
 - **Students**: Learning data visualization concepts
 - **Educators**: Teaching matplotlib and pandas
 - **Developers**: Understanding animation implementation
 - **Analysts**: Exploring financial data visualization techniques
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Key Functions
 - `load_stock_data()`: Loads and preprocesses CSV files
@@ -201,7 +201,7 @@ The included `stock_animation.ipynb` provides a comprehensive, interactive learn
 - Efficient data filtering with pandas
 - Minimal plot updates per frame
 
-## 📤 Export Options
+## Export Options
 
 ### MP4 Export
 ```python
@@ -220,7 +220,7 @@ anim.save('multi_stock_animation.gif', writer='pillow', fps=10)
 - **Performance**: Export time depends on frame count and complexity
 - **New filenames**: Files are saved as `multi_company_stock_animation.mp4/gif`
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 1. **Missing FFmpeg**: Install FFmpeg for MP4 export
@@ -233,7 +233,7 @@ anim.save('multi_stock_animation.gif', writer='pillow', fps=10)
 - **File not found**: Check CSV file paths and names
 - **Animation not displaying**: Ensure matplotlib backend supports animation
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Add volume data visualization
 - Include more stocks for comparison
@@ -245,7 +245,7 @@ anim.save('multi_stock_animation.gif', writer='pillow', fps=10)
 - Portfolio performance comparison features
 - Technical indicators (moving averages, RSI, etc.)
 
-## 📚 Learning Resources
+## Learning Resources
 
 ### Tutorials
 - **Jupyter Notebook**: `stock_animation.ipynb` - Complete step-by-step guide
@@ -262,15 +262,15 @@ anim.save('multi_stock_animation.gif', writer='pillow', fps=10)
 - View these files to see expected results before running your own data
 - Console output shows loading status: `[SUCCESS]` or `[ERROR]` for each company
 
-## 📝 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🤝 Contributing
+## Contributing
 
-Feel free to fork this project and submit pull requests for improvements or bug fixes.
+You can fix this project and submit pull requests for improvements or bug fixes.
 
-## 📧 Contact
+## Contact
 
 For questions or suggestions, please open an issue in the repository.
 
